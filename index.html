@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Code Quiz</h1>
+        <div class="timer"></div>
+    </header>
+
+    <button id="high-score">VIEW HIGH SCORE</button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="enterScore">High Score: </h2>
+        </div>
+    </div>
+
+    <main>
+        <section class="initial" id="welcome">
+            <p>Prepare yourself for the most challenging coding quiz ever created. If you make a high score, you will probably get hired by FAANG immediately. Are you ready to play?</p>
+            <button id="start">Start Quiz</button>
+        </section>
+        
+        <section class="card" id="question1">
+            <h3>Inside which HTML element do we put the JavaScript?</h3>
+            <ul>
+                <li><button id="answer1" value="correct" onclick="correctAnswer()">script</js></button></li>
+                <li><button id="answer" value="wrong" onclick="wrongAnswer()">scripting</button></li>
+                <li><button id="answer" value="wrong" onclick="wrongAnswer()">javascript</button></li>                
+                <li><button id="answer" value="wrong" onclick="wrongAnswer()">js</button></li>            
+            </ul>
+        </section>
+        
+        <section class="card" id="question2">
+            <h3>Where is the correct place to insert a JavaScript?</h3>
+            <ul>
+                <li><button id="answer" value="wrong" onclick="wrongAnswer()">Both the head and the body section</button></li>
+                <li><button id="answer2" value="correct" onclick="correctAnswer()">body section</button></li>
+                <li><button id="answer" value="wrong" onclick="wrongAnswer()">head section</button></li>                
+                <li><button id="answer" value="wrong" onclick="wrongAnswer()">meta element</button></li>            
+            </ul>
+        </section>
+
+        <section class="card" id="question3">
+            <h3>Which of the following is a valid type of function javascript supports?</h3>
+            <ul>
+                <li><button id="answer" value="wrong" onclick="wrongAnswer()">named function</button></li>
+                <li><button id="answer" value="wrong" onclick="wrongAnswer()">anonymous function</button></li>
+                <li><button id="answer3" value="correct" onclick="correctAnswer()">Both of the above</button></li>                
+                <li><button id="answer" value="wrong" onclick="wrongAnswer()">None of the above</button></li>            
+            </ul>
+        </section>
+
+        <section class="card" id="question4">
+            <h3>Which of the following type of variable takes precedence over other if names are same?</h3>
+            <ul>
+                <li><button id="answer" value="wrong" onclick="wrongAnswer()">global variable</button></li>
+                <li><button id="answer" value="wrong" onclick="wrongAnswer()">None of the above</button></li>
+                <li><button id="answer" value="wrong" onclick="wrongAnswer()">Both of the above</button></li>                
+                <li><button id="answer4" value="correct" onclick="correctAnswer()">local variable</button></li>            
+            </ul>
+        </section>
+
+        <section class="card" id="question5">
+            <h3>Which of the following function of String object returns the primitive value of the specified object.</h3>
+            <ul>
+                <li><button id="answer" value="wrong" onclick="wrongAnswer()">toLocaleUpperCase()</button></li>
+                <li><button id="answer" value="wrong" onclick="wrongAnswer()">toUpperCase()</button></li>
+                <li><button id="answer" value="wrong" onclick="wrongAnswer()">toString()</button></li>                
+                <li><button id="answer5" value="correct" onclick="correctAnswer()">valueOf()</button></li>            
+            </ul>
+        </section>
+
+        <section class="card" id="conclusion">
+            <h3></h3>
+            <div id="congrats"></div>
+        </section>
+
+        <div class="modal2" id="game-over">
+            <div class="modal2-content">
+                <span class="close2">&times;</span>
+                <h4 id="over-score"></h4>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="right-wrong"></div>
+    </footer>
+
+<script src="./assets/script.js"></script>    
+</body>
+</html>
