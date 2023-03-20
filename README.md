@@ -1,10 +1,10 @@
 # code-quiz
 
 ## Task
--Create a coding quiz that follows the acceptance criteria
--Make sure you can click through, presenting new questions each time
--Subtract time fro wrong answers
--Build a high score display that stores data in local storage
+- Create a coding quiz that follows the acceptance criteria
+- Make sure you can click through, presenting new questions each time
+- Subtract time fro wrong answers
+- Build a high score display that stores data in local storage
 
 ## Process
 - Create a basic HTML and CSS sheet that will enable multiple questions to be asked, leaving room for high-score
