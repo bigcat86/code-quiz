@@ -19,7 +19,7 @@
 - Solidified skills with defining variables in JS that correspond HTML elements
 
 ## Take a look
-- Please follow this link to get to my coding quiz:
+- Please follow this link to get to my coding quiz: https://bigcat86.github.io/code-quiz/
 
 Check out some of the different elements of my coding challenge!
 
@@ -28,5 +28,6 @@ Question displayed with timer function running:
 
 
 GAME OVER!!
-[Screenshot 2023-03-20 at 3 45 01 PM](https://user-images.githubusercontent.com/122062578/226474345-9e9eef41-505c-43c5-bd81-e005ae333951.png)
+![Screenshot 2023-03-20 at 3 45 01 PM](https://user-images.githubusercontent.com/122062578/226475163-33a725ef-f3be-40f5-a865-13f4325a5674.png)
+
 
