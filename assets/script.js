@@ -13,7 +13,7 @@ const footer = document.querySelector('.right-wrong');
 const congrats = document.querySelector('#congrats');
 const enterScore = document.querySelector('#enterScore');
 
-// function for switching from initial display to first question
+// function for switching from initial display to first question and starting timer
 function displayQuestion() {
     setTimer();
     welcome.setAttribute('style', 'display: none;')
@@ -21,7 +21,7 @@ function displayQuestion() {
 }
 start.addEventListener('click', displayQuestion);
 
-// timer finction
+// timer finction and stop timer for GAME OVER or end of game
 let secondsLeft = 30;
 timer.setAttribute('style', 'font-size: 3rem;')
 function setTimer() {
@@ -33,6 +33,10 @@ function setTimer() {
             timer.textContent = 'GAME OVER';
             modal2.style.display = 'block';
             overScore.textContent = `Score: ${points} / 5`;
+        }else if (conclusion.style.display == 'flex') {
+            clearInterval(interval);
+        }else {
+            return;
         }
     },1000)
 }
@@ -93,7 +97,7 @@ var overScore = document.getElementById('over-score');
 
 viewHighScore.onclick = function() {
     modal.style.display = "block";
-    enterScore.textContent = 'High Score: ' + localStorage.getItem('high-score') + ' / 5 ----- '+ localStorage.getItem('high-initials');
+    enterScore.textContent = 'High Score:   ' + localStorage.getItem('high-score') + ' / 5   '+ localStorage.getItem('high-initials');
 }
 span.onclick = function() {
   modal.style.display = "none";
